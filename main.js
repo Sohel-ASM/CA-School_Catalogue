@@ -60,4 +60,18 @@ class MiddleSchool extends School {
 
 const centralCatholic = new MiddleSchool('Central Catholic Middle School', 500);
 
-console.log(centralCatholic.quickFacts());
+//console.log(centralCatholic.quickFacts());
+
+class HighSchool extends School {
+    constructor(name, numberOfStudents, sportsTeams) {
+        super(name, 'high', numberOfStudents);
+        this._sportsTeams = sportsTeams;
+    }
+    get sportsTeams() {
+        console.log(this._sportsTeams);
+    }
+}
+
+const alSmith = new HighSchool('Al E. Smith', 415, ['Baseball', 'Basketball', 'Volleyball', 'Track and Field']);
+
+//console.log(alSmith.sportsTeams);

@@ -23,5 +23,8 @@ class School {
             this._numberOfStudents = input;
         }
     }
+    quickFacts() {
+        console.log(`${this.name} educates ${this.numberOfStudents} students, typically between the ages of ${this.level} level.`);
+    }
 
 }

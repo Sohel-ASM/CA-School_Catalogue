@@ -43,3 +43,11 @@ class PrimarySchool extends School {
         return this._pickupPolicy;
     }
 }
+
+const lorraineHansbury = new PrimarySchool('Loarraine Hansbury', 514, 'Students must be picked up by a parent, guardian, or a family member over the age of 13.');
+
+lorraineHansbury.quickFacts();
+
+let substituteTeachers = ['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli', 'Shannon Grey', ];
+
+console.log('Substitute Teacher: ' + School.pickSubstituteTeacher(substituteTeachers));

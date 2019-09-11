@@ -26,5 +26,9 @@ class School {
     quickFacts() {
         console.log(`${this.name} educates ${this.numberOfStudents} students, typically between the ages of ${this.level} level.`);
     }
-
+    static pickSubstituteTeacher(substituteTeacher) {
+        let randomNumber = Math.floor(Math.random() * (substituteTeacher.length));
+        let pickTeacher = substituteTeacher[randomNumber];
+        return pickTeacher;
+    }
 }

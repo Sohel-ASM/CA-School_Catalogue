@@ -1,0 +1,1 @@
+This JavaScript program is for helping school board of a city to hold quick reference material for each school in the city. For this school catalogue program arbitrarily schools in Windsor city were taken into consideration.

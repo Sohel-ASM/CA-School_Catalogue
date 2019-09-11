@@ -51,3 +51,13 @@ lorraineHansbury.quickFacts();
 let substituteTeachers = ['Jamal Crawford', 'Lou Williams', 'J. R. Smith', 'James Harden', 'Jason Terry', 'Manu Ginobli', 'Shannon Grey', ];
 
 console.log('Substitute Teacher: ' + School.pickSubstituteTeacher(substituteTeachers));
+
+class MiddleSchool extends School {
+    constructor(name, numberOfStudents) {
+        super(name, 'middle', numberOfStudents);
+    }
+}
+
+const centralCatholic = new MiddleSchool('Central Catholic Middle School', 500);
+
+console.log(centralCatholic.quickFacts());
